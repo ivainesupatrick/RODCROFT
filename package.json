@@ -1,0 +1,17 @@
+{
+  "name": "rodcroft-website",
+  "version": "1.0.0",
+  "description": "Rodcroft Civil Engineering Contractors — static marketing site",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node build.mjs",
+    "zip": "cd dist && zip -r -X ../rodcroft-dist.zip . -x '.*' && cd ..",
+    "deploy": "npm run build && npm run zip"
+  },
+  "devDependencies": {
+    "clean-css": "^5.3.3",
+    "html-minifier-terser": "^7.2.0",
+    "terser": "^5.31.0"
+  }
+}
