@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "build": "node build.mjs",
-    "zip": "cd dist && zip -r -X ../rodcroft-dist.zip . -x '.*' && cd ..",
+    "zip": "cd dist && zip -r -X ../rodcroft-dist.zip . -x '.DS_Store' && cd ..",
     "deploy": "npm run build && npm run zip"
   },
   "devDependencies": {

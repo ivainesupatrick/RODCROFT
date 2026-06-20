@@ -16,16 +16,7 @@
   <!-- HEADER -->
   <header class="site-header">
     <div class="container header-inner">
-      <a class="brand" href="index.html" aria-label="Rodcroft home">
-        <svg class="brand__mark" width="40" height="40" viewBox="0 0 40 40" fill="none" aria-hidden="true">
-          <rect width="40" height="40" rx="2" fill="#c9a84c"/>
-          <path d="M11 29V11h9.2c3.6 0 5.8 2 5.8 5.1 0 2.3-1.2 4-3.3 4.7L29 29h-4.4l-3.7-7.4h-2.6V29H11zm5.3-11h3.4c1.4 0 2.3-.8 2.3-2s-.9-2-2.3-2h-3.4v4z" fill="#1a1f4e"/>
-        </svg>
-        <span class="brand__text">
-          <span class="brand__name">RODCROFT</span>
-          <span class="brand__sub">Civil Engineering</span>
-        </span>
-      </a>
+      <a class="brand" href="index.html" aria-label="Rodcroft Civil Engineering Contractors home"><img class="brand__logo" src="assets/logo.png" alt="Rodcroft Civil Engineering Contractors" width="168" height="40"></a>
 
       <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="primary-nav">
         <span></span><span></span><span></span>
@@ -46,12 +37,18 @@
   </header>
 
   <!-- HERO -->
-  <section class="hero">
+  <section class="hero hero--slideshow">
+    <div class="hero__slideshow" aria-hidden="true">
+      <div class="hero__slide" style="background-image:url('assets/hero-earthworks.jpg'); animation-delay:0s"></div>
+      <div class="hero__slide" style="background-image:url('assets/grader-road.jpg'); animation-delay:7s"></div>
+      <div class="hero__slide" style="background-image:url('assets/road-asphalt.jpg'); animation-delay:14s"></div>
+      <div class="hero__slide" style="background-image:url('assets/volvo-excavator.jpg'); animation-delay:21s"></div>
+    </div>
     <div class="container">
       <div class="hero__inner">
         <p class="sub">Built on Experience. Driven by Quality.</p>
         <h1>Zimbabwe's Infrastructure Specialists</h1>
-        <p class="lead">Two decades of delivering roads, water systems, drainage and bulk civil works for government, financial institutions and private developers across Zimbabwe.</p>
+        <p class="lead">Since 2003, Rodcroft has delivered roads, water and sewer systems, drainage, dams and bulk civil works for government, banks and private developers across Zimbabwe — recognised as a Category A contractor by CIFOZ.</p>
         <div class="hero__cta">
           <a href="contact.html" class="btn btn--gold">Work With Us</a>
           <a href="contact.html" class="btn btn--gold-outline">Request a Quote</a>
@@ -67,7 +64,7 @@
         <div class="stat"><div class="stat__num">20+</div><div class="stat__label">Years Experience</div></div>
         <div class="stat"><div class="stat__num">100+</div><div class="stat__label">Projects Delivered</div></div>
         <div class="stat"><div class="stat__num">8</div><div class="stat__label">Core Services</div></div>
-        <div class="stat"><div class="stat__num">Trusted</div><div class="stat__label">by Zimbabwe's Leading Firms</div></div>
+        <div class="stat"><div class="stat__num">Cat A</div><div class="stat__label">CIFOZ-Registered Contractor</div></div>
       </div>
     </div>
   </section>
@@ -175,30 +172,30 @@
 
       <div class="projects-grid">
         <article class="project-card">
-          <div class="project-card__img" data-bg="url('assets/blueprint.svg')">
-            <span class="project-card__tag">Roads &amp; Transport</span>
+          <div class="project-card__img" data-bg="url('assets/road-asphalt.jpg')">
+            <span class="project-card__tag">Infrastructure Development</span>
           </div>
           <div class="project-card__body">
-            <h3>Harare Ring Road Rehabilitation</h3>
-            <p class="project-card__client">Client: <strong>City of Harare</strong></p>
+            <h3>Ruwa Athelney Infrastructure Development</h3>
+            <p class="project-card__client">Client: <strong>CBZ Bank Limited</strong></p>
           </div>
         </article>
         <article class="project-card">
-          <div class="project-card__img" data-bg="url('assets/blueprint.svg')">
-            <span class="project-card__tag">Water Systems</span>
+          <div class="project-card__img" data-bg="url('assets/road-aggregate.jpg')">
+            <span class="project-card__tag">Township Servicing</span>
           </div>
           <div class="project-card__body">
-            <h3>Mazowe Bulk Water Pipeline</h3>
-            <p class="project-card__client">Client: <strong>ZINWA</strong></p>
+            <h3>Glaudina Phase I — 735 Residential Stands</h3>
+            <p class="project-card__client">Client: <strong>NSSA</strong></p>
           </div>
         </article>
         <article class="project-card">
-          <div class="project-card__img" data-bg="url('assets/blueprint.svg')">
-            <span class="project-card__tag">Development</span>
+          <div class="project-card__img" data-bg="url('assets/gabion-idai.jpg')">
+            <span class="project-card__tag">Disaster Restoration</span>
           </div>
           <div class="project-card__body">
-            <h3>Borrowdale Industrial Park Servicing</h3>
-            <p class="project-card__client">Client: <strong>Private Developer</strong></p>
+            <h3>Cyclone Idai Slope Protection, Bvumba Road</h3>
+            <p class="project-card__client">Client: <strong>Manicaland Province</strong></p>
           </div>
         </article>
       </div>
@@ -213,12 +210,12 @@
     <div class="container">
       <p class="eyebrow" style="text-align:center;">Trusted By Zimbabwe's Leading Firms</p>
       <div class="clients__row">
-        <div class="client-logo"><span>CBZ</span></div>
+        <div class="client-logo"><span>CBZ Bank</span></div>
         <div class="client-logo"><span>Stanbic Bank</span></div>
-        <div class="client-logo"><span>Electrosales</span></div>
-        <div class="client-logo"><span>ZINWA</span></div>
-        <div class="client-logo"><span>City of Harare</span></div>
+        <div class="client-logo"><span>NSSA</span></div>
         <div class="client-logo"><span>Old Mutual</span></div>
+        <div class="client-logo"><span>UNICEF</span></div>
+        <div class="client-logo"><span>POSB</span></div>
       </div>
     </div>
   </section>
@@ -227,8 +224,8 @@
   <section class="section quote-block">
     <div class="container">
       <div class="quote-mark">&ldquo;</div>
-      <blockquote>Rodcroft delivered our bulk water infrastructure ahead of programme and to an exacting standard. Their engineering discipline and reporting gave our committee complete confidence from tender to handover.</blockquote>
-      <cite>Project Director<span>Municipal Infrastructure Programme</span></cite>
+      <blockquote>Rodcroft prides itself in its ability to achieve more with less — optimising resources while meeting the high standards of quality that satisfy our clients. The projects we have successfully carried out bear testimony to the relevance of the services we offer.</blockquote>
+      <cite>Rodcroft Civil Engineering Contractors<span>Category A Contractor — CIFOZ</span></cite>
     </div>
   </section>
 
@@ -246,16 +243,7 @@
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
-          <a class="brand" href="index.html" aria-label="Rodcroft home">
-            <svg class="brand__mark" width="40" height="40" viewBox="0 0 40 40" fill="none" aria-hidden="true">
-              <rect width="40" height="40" rx="2" fill="#c9a84c"/>
-              <path d="M11 29V11h9.2c3.6 0 5.8 2 5.8 5.1 0 2.3-1.2 4-3.3 4.7L29 29h-4.4l-3.7-7.4h-2.6V29H11zm5.3-11h3.4c1.4 0 2.3-.8 2.3-2s-.9-2-2.3-2h-3.4v4z" fill="#1a1f4e"/>
-            </svg>
-            <span class="brand__text">
-              <span class="brand__name">RODCROFT</span>
-              <span class="brand__sub">Civil Engineering</span>
-            </span>
-          </a>
+          <a class="brand" href="index.html" aria-label="Rodcroft Civil Engineering Contractors home"><img class="brand__logo" src="assets/logo.png" alt="Rodcroft Civil Engineering Contractors" width="168" height="40"></a>
           <p class="footer-about">Civil engineering contractors delivering Zimbabwe's roads, water, drainage and bulk earthworks since 2003. Built on Experience. Driven by Quality.</p>
         </div>
 
@@ -276,15 +264,23 @@
           <ul class="footer-contact">
             <li>
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.6A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.4-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>
-              <a href="tel:+263242123456">+263 242 123 456</a>
+              <a href="tel:+263242309867">+263 242 309867</a>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.15-1.7-.85-2-.95s-.45-.15-.65.15-.75.95-.9 1.15-.32.22-.6.07a8.2 8.2 0 0 1-2.4-1.5 9 9 0 0 1-1.67-2.07c-.17-.3 0-.46.13-.6s.3-.35.44-.52a2 2 0 0 0 .3-.5.55.55 0 0 0 0-.52c-.07-.15-.65-1.57-.9-2.15s-.48-.48-.65-.49h-.56a1.06 1.06 0 0 0-.77.36 3.2 3.2 0 0 0-1 2.4 5.6 5.6 0 0 0 1.17 2.95 12.8 12.8 0 0 0 4.9 4.33c.68.3 1.22.47 1.64.6a3.9 3.9 0 0 0 1.8.12 3 3 0 0 0 2-1.4 2.4 2.4 0 0 0 .17-1.4c-.07-.13-.26-.2-.55-.34zM12 2a10 10 0 0 0-8.6 15l-1.4 5 5.13-1.35A10 10 0 1 0 12 2z"/></svg>
+              <a href="https://wa.me/263772869207" target="_blank" rel="noopener">+263 772 869207</a>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.15-1.7-.85-2-.95s-.45-.15-.65.15-.75.95-.9 1.15-.32.22-.6.07a8.2 8.2 0 0 1-2.4-1.5 9 9 0 0 1-1.67-2.07c-.17-.3 0-.46.13-.6s.3-.35.44-.52a2 2 0 0 0 .3-.5.55.55 0 0 0 0-.52c-.07-.15-.65-1.57-.9-2.15s-.48-.48-.65-.49h-.56a1.06 1.06 0 0 0-.77.36 3.2 3.2 0 0 0-1 2.4 5.6 5.6 0 0 0 1.17 2.95 12.8 12.8 0 0 0 4.9 4.33c.68.3 1.22.47 1.64.6a3.9 3.9 0 0 0 1.8.12 3 3 0 0 0 2-1.4 2.4 2.4 0 0 0 .17-1.4c-.07-.13-.26-.2-.55-.34zM12 2a10 10 0 0 0-8.6 15l-1.4 5 5.13-1.35A10 10 0 1 0 12 2z"/></svg>
+              <a href="https://wa.me/263772889277" target="_blank" rel="noopener">+263 772 889277</a>
             </li>
             <li>
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 7l10 6 10-6"/></svg>
-              <a href="mailto:info@rodcroft.co.zw">info@rodcroft.co.zw</a>
+              <a href="mailto:info@rodcroftcivils.com">info@rodcroftcivils.com</a>
             </li>
             <li>
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 6-9 12-9 12s-9-6-9-12a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-              <span>14 Coventry Road, Workington, Harare, Zimbabwe</span>
+              <span>1 Adylinn Road, Marlborough, Harare, Zimbabwe</span>
             </li>
           </ul>
           <div class="footer-social">
@@ -302,7 +298,7 @@
   </footer>
 
   <!-- WHATSAPP FLOAT -->
-  <a class="whatsapp-float" href="https://wa.me/263772123456" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <a class="whatsapp-float" href="https://wa.me/263772869207" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
     <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.15-1.7-.85-2-.95s-.45-.15-.65.15-.75.95-.9 1.15-.32.22-.6.07a8.2 8.2 0 0 1-2.4-1.5 9 9 0 0 1-1.67-2.07c-.17-.3 0-.46.13-.6s.3-.35.44-.52a2 2 0 0 0 .3-.5.55.55 0 0 0 0-.52c-.07-.15-.65-1.57-.9-2.15s-.48-.48-.65-.49h-.56a1.06 1.06 0 0 0-.77.36 3.2 3.2 0 0 0-1 2.4 5.6 5.6 0 0 0 1.17 2.95 12.8 12.8 0 0 0 4.9 4.33c.68.3 1.22.47 1.64.6a3.9 3.9 0 0 0 1.8.12 3 3 0 0 0 2-1.4 2.4 2.4 0 0 0 .17-1.4c-.07-.13-.26-.2-.55-.34zM12 2a10 10 0 0 0-8.6 15l-1.4 5 5.13-1.35A10 10 0 1 0 12 2z"/></svg>
   </a>
 

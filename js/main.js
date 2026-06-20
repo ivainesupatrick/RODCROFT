@@ -55,4 +55,26 @@
   } else {
     lazyEls.forEach(function (el) { el.style.backgroundImage = el.getAttribute('data-bg'); });
   }
+
+  // Scroll-reveal animations
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var revealEls = document.querySelectorAll(
+    '.section-head, .service-card, .why-col, .project-card, .svc-row, .client-tier, .stat-strip, .media-panel, .two-col > div, .contracts-wrap'
+  );
+  if (!reduce && 'IntersectionObserver' in window && revealEls.length) {
+    revealEls.forEach(function (el, i) {
+      el.classList.add('reveal');
+      var d = i % 3;
+      if (d) el.classList.add('reveal-delay-' + d);
+    });
+    var ro = new IntersectionObserver(function (entries, obs) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('reveal-in');
+          obs.unobserve(entry.target);
+        }
+      });
+    }, { rootMargin: '0px 0px -10% 0px', threshold: 0.08 });
+    revealEls.forEach(function (el) { ro.observe(el); });
+  }
 })();
