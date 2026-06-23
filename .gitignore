@@ -5,3 +5,7 @@ node_modules/
 dist/
 rodcroft-dist/
 *.zip
+
+# Private — never commit the company profile document
+assets/Rodcroft Company profile.docx
+*.docx
