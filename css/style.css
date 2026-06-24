@@ -422,14 +422,10 @@ ul { margin: 0; padding: 0; list-style: none; }
   font-size: 1.3rem;
   letter-spacing: .02em;
   color: var(--navy);
-  opacity: .55;
-  transition: opacity .2s ease;
   display: flex;
   align-items: center;
   gap: 10px;
-  filter: grayscale(1);
 }
-.client-logo:hover { opacity: 1; }
 .client-logo span { display: inline-block; }
 
 /* ---------- Testimonial ---------- */
@@ -765,17 +761,13 @@ ul { margin: 0; padding: 0; list-style: none; }
   transition: background-color .2s ease, transform .2s ease;
 }
 .logo-cell:hover { background: var(--grey-bg); transform: translateY(-3px); }
-.logo-cell .client-logo { font-size: 1.15rem; opacity: .65; }
+.logo-cell .client-logo { font-size: 1.15rem; }
 .logo-cell img {
   max-height: 72px;
   max-width: 100%;
   width: auto;
-  filter: grayscale(1);
-  opacity: .85;
-  transition: filter .25s ease, opacity .25s ease;
 }
 .logo-cell img.logo--lg { max-height: 104px; }
-.logo-cell:hover img { filter: grayscale(0); opacity: 1; }
 .logo-cell__name {
   font-family: 'Inter', sans-serif;
   font-size: .72rem;
@@ -799,7 +791,7 @@ ul { margin: 0; padding: 0; list-style: none; }
   gap: 7px;
   padding: 18px;
   text-align: center;
-  background: linear-gradient(135deg, var(--navy) 0%, var(--navy-deep) 100%);
+  background: var(--navy);
 }
 .client-mono__abbr {
   font-family: 'Montserrat', sans-serif;
