@@ -82,6 +82,14 @@ async function run() {
 
   // .htaccess for Apache (gzip + cache headers)
   const htaccess = `# Rodcroft — Apache config for Hostinger
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  # Force HTTPS and strip www -> https://rodcroftcivils.com (canonical)
+  RewriteCond %{HTTP_HOST} ^www\\.(.+)$ [NC]
+  RewriteRule ^ https://%1%{REQUEST_URI} [L,R=301]
+  RewriteCond %{HTTPS} off
+  RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+</IfModule>
 <IfModule mod_deflate.c>
   AddOutputFilterByType DEFLATE text/html text/css application/javascript image/svg+xml application/xml
 </IfModule>
