@@ -26,6 +26,51 @@
 
 html { scroll-behavior: smooth; }
 
+/* ---------- Page loader ---------- */
+#page-loader {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, var(--navy) 0%, var(--navy-deep) 100%);
+  opacity: 1;
+  transition: opacity .45s ease, visibility .45s ease;
+}
+#page-loader.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+.page-loader__badge {
+  width: 104px;
+  height: 104px;
+  border-radius: 50%;
+  background: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, .35);
+  animation: loaderPulse 1.4s ease-in-out infinite;
+}
+.page-loader__badge img {
+  width: 62px;
+  height: auto;
+  display: block;
+  animation: loaderSpin 1.6s linear infinite;
+}
+@keyframes loaderSpin {
+  to { transform: rotate(360deg); }
+}
+@keyframes loaderPulse {
+  0%, 100% { box-shadow: 0 10px 30px rgba(0, 0, 0, .35); transform: scale(1); }
+  50% { box-shadow: 0 14px 40px rgba(201, 168, 76, .45); transform: scale(1.08); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .page-loader__badge, .page-loader__badge img { animation: none; }
+}
+
 body {
   margin: 0;
   font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;

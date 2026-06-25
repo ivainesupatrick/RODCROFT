@@ -2,6 +2,20 @@
 (function () {
   'use strict';
 
+  // Page loader — hide once the page has loaded (with a safety timeout)
+  var loader = document.getElementById('page-loader');
+  if (loader) {
+    var hideLoader = function () {
+      if (loader.classList.contains('is-hidden')) return;
+      loader.classList.add('is-hidden');
+      window.setTimeout(function () {
+        if (loader && loader.parentNode) loader.parentNode.removeChild(loader);
+      }, 500);
+    };
+    window.addEventListener('load', hideLoader);
+    window.setTimeout(hideLoader, 4000);
+  }
+
   // Mobile nav toggle
   var toggle = document.querySelector('.nav-toggle');
   var nav = document.querySelector('.main-nav');
